@@ -1,13 +1,13 @@
 {
   "pruebas": [
-    { "id": "reto1", "title": "", },
-    { "id": "reto2", "title": "", },
-    { "id": "reto3", "title": "", },
-    { "id": "reto4", "title": "", },
-    { "id": "reto5", "title": "", },
-    { "id": "reto6", "title": "", },
-    { "id": "reto7", "title": "", },
-    { "id": "reto8", "title": "", }
+    { "id": "reto1", "Puertas Magicas": "", },
+    { "id": "reto2", "Cajas Misteriosas": "", },
+    { "id": "reto3", "Descifra el Mensaje": "", },
+    { "id": "reto4", "Descubre al Impostor": "", },
+    { "id": "reto5", "Ubica los Ríos": "", },
+    { "id": "reto6", "Sigueme": "", },
+    { "id": "reto7", "El Anagrama": "", },
+    { "id": "reto8", "Completa el Mapa": "", }
   ],
   "pregunta": [
     { "id": "reto1", "pregunta": "", "pruebaId": "1" },
