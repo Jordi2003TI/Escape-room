@@ -9,6 +9,15 @@
     { "id": "reto7", "title": "", },
     { "id": "reto8", "title": "", }
   ],
-  "pregunta": [],
+  "pregunta": [
+    { "id": "reto1", "pregunta": "", "pruebaId": "1" },
+    { "id": "reto2", "pregunta": "", "pruebaId": "2" },
+    { "id": "reto3", "pregunta": "", "pruebaId": "3" },
+    { "id": "reto4", "pregunta": "", "pruebaId": "4" },
+    { "id": "reto5", "pregunta": "", "pruebaId": "5" },
+    { "id": "reto6", "pregunta": "", "pruebaId": "6" },
+    { "id": "reto7", "pregunta": "", "pruebaId": "7" },
+    { "id": "reto8", "pregunta": "", "pruebaId": "8" }
+  ],
     
 }
