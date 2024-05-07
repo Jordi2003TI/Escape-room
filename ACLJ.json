@@ -1,1 +1,14 @@
-exemple per editar qualsevol
+{
+  "pruebas": [
+    { "id": "reto1", "title": "", },
+    { "id": "reto2", "title": "", },
+    { "id": "reto3", "title": "", },
+    { "id": "reto4", "title": "", },
+    { "id": "reto5", "title": "", },
+    { "id": "reto6", "title": "", },
+    { "id": "reto7", "title": "", },
+    { "id": "reto8", "title": "", }
+  ],
+  "pregunta": [],
+    
+}
