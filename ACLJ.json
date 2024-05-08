@@ -11,7 +11,7 @@
   ],
   "pregunta": [
     { "id": "reto1", "¿Te consideras una persona afortunada? Si la respuesta es no empieza a rezar. Delante de ti se presentan cuatro puertas de colores ROSA, AZUL, AMARILLO y VERDE. Una sola de estas puertas es la que te permitirá avanzar a la siguiente prueba. En las otras tres puertas encontrarás escenarios que atentaran contra tu integridad física. Adelante, te deseamos suerte ¡A jugar!": "", "pruebaId": "1" },
-    { "id": "reto2", "pregunta": "", "pruebaId": "2" },
+    { "id": "reto2", "Frente a ti se presentan cuatro cajas, tan solo en una de ellas se encuentra un tesoro de valor incalculable, mientras que en las otras tres encontraras la muerte. Elige con sabiduria...": "", "pruebaId": "2" },
     { "id": "reto3", "pregunta": "", "pruebaId": "3" },
     { "id": "reto4", "pregunta": "", "pruebaId": "4" },
     { "id": "reto5", "pregunta": "", "pruebaId": "5" },
