@@ -2,7 +2,7 @@
   "pruebas": [
     { "id": "reto1", "Puertas Magicas": "", },
     { "id": "reto2", "Cajas Misteriosas": "", },
-    { "id": "reto3", "Descifra el Mensaje": "", },
+    { "id": "reto3", "Encuentra el Mensaje": "", },
     { "id": "reto4", "Descubre al Impostor": "", },
     { "id": "reto5", "Ubica los Ríos": "", },
     { "id": "reto6", "Sigueme": "", },
@@ -12,8 +12,8 @@
   "pregunta": [
     { "id": "reto1", "¿Te consideras una persona afortunada? Si la respuesta es no empieza a rezar. Delante de ti se presentan cuatro puertas de colores ROSA, AZUL, AMARILLO y VERDE. Una sola de estas puertas es la que te permitirá avanzar a la siguiente prueba. En las otras tres puertas encontrarás escenarios que atentaran contra tu integridad física. Adelante, te deseamos suerte ¡A jugar!": "", "pruebaId": "1" },
     { "id": "reto2", "¡Rápido! El tiempo corre. Por suerte has encontrado cuatro cajas misteriosas. Cada una de estas cajas esconde una herramienta que te ayudara a seguir con vida durante las siguientes pruebas, escoge bien ...Elige con sabiduría.": "", "pruebaId": "2" },
-    { "id": "reto3", "pregunta": "", "pruebaId": "3" },
-    { "id": "reto4", "Conseguiste descifrar el mensaje, pero no cantes victoria porque esto no acaba aquí. En la siguiente prueba tendrás que encontrar al impostor y eliminarlo. Recuerda, eso sí, que tus pies estas sobre una trampilla inesquivable y si fallas caerás a una fosa repleta de caimanes hambrientos. Concéntrate y elige.": "", "pruebaId": "4" },
+    { "id": "reto3", "De repente un estallido de luz te ciega. Ahora no ves nada, la luz ha quemado tus ojos y todo es blanco. Ahora tendrás que buscar la pista a ciegas. Encuéntrala": "", "pruebaId": "3" },
+    { "id": "reto4", "Conseguiste encontrar la pista, pero no cantes victoria porque esto no acaba aquí. En la siguiente prueba tendrás que encontrar al impostor y eliminarlo. Recuerda, eso sí, que tus pies estas sobre una trampilla inesquivable y si fallas caerás a una fosa repleta de caimanes hambrientos. Concéntrate y elige.": "", "pruebaId": "4" },
     { "id": "reto5", "pregunta": "", "pruebaId": "5" },
     { "id": "reto6", "pregunta": "", "pruebaId": "6" },
     { "id": "reto7", "pregunta": "", "pruebaId": "7" },
