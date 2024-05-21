@@ -1,0 +1,408 @@
+{
+  "start": [
+    {
+      "id": "1",
+      "instruciones": "Para jugar deberas poner la palabra clave en la ruta, a cada prueba nueva tendras que reemplazar la anterior y poner en su lugar la palabra indicada tal cual sale, es CaseSensitive.",
+      "descripcion": "Hola vamos a jugar a un juego, deberas sobrepasar las siguientes pruebas o sino el gatito que tenemos encerrado tendra garaves consecuencias.",
+      "empieza": "Para empezar deberas de usar la siguiente ruta: 'URL/ordenar', ejemplo (http://localhost:3000/ordenar). Cada vez que obtengas una nueva clave deberas reemplazar la actual por la nueva en la URL"
+    }
+  ],
+  "ordenar": [
+    {
+      "id": "save",
+      "palabra": "xxxxxxxx",
+      "titulo": "ORDENAME",
+      "instruciones": "Deberas poner en la URL de cada fase el TITULO para acceder a la prueba. Ej este caso seria ORDENAME, lee la descripción para saber que hay que hacer",
+      "descripcion": "Tendras que hacer un GET a partir de la URL/ORDENAME y apuntarte las partíulas/elementos que vayas consiguiendo a partir de las respuestas de las preguntas, en que las respuestas son la clave que te ayudara a descubrir los elementos nuevos. Ves haciendo PATCH aquí con el 'save' como {:id}, desde la clave 'ordenar' e ir actualizando las XXXXX del campo 'palabra' por los elementos que consigas, el resultado de la palabra ordenada sera la nueva clave para acceder a la siguiente fase",
+      "descripcion1": "Para saber la clave tendras que acertar las siguientes preguntas que te llevaran a saber la palabara ordenada correspondiente, suerte.",
+      "regla": "A cada clave, clave o titulo que obtengas, corresponde hacerle un GET",
+      "pista": "Actualizar con la palabra final en el campo 'palabra' con el método PATCH en la siguiente ruta: URL/save, ejemplo (http://localhost:3000/save)"
+    }
+  ],
+  "ORDENAME": [
+    {
+      "id": "1",
+      "palabra para volver": "ordenar, ejemplo: URL/ordenar"
+    },
+    {
+      "id": "2",
+      "pregunta": "Cómo se llama el profesor de base de datos?"
+    },
+    {
+      "id": "3",
+      "pregunta": "Quién es en verdad spiderman?"
+    },
+    {
+      "id": "4",
+      "pregunta": "El Jordi y el Moises estan casados? (pregunta difícil)"
+    },
+    {
+      "id": "5",
+      "pregunta": "En que año fue la revolución francesa?"
+    }
+  ],
+  "Jordi": [
+    {
+      "id": "1",
+      "elemento": "at",
+      "volver": "ORDENAME"
+    }
+  ],
+  "Peter Parker": [
+    {
+      "id": "1",
+      "elemento": "ren",
+      "volver": "ORDENAME"
+    }
+  ],
+  "Si": [
+    {
+      "id": "1",
+      "elemento": "at",
+      "volver": "ORDENAME"
+    }
+  ],
+  "1789": [
+    {
+      "id": "1",
+      "elemento": "G",
+      "volver": "ORDENAME"
+    }
+  ],
+  "Gatrenat": [
+    {
+      "id": "1",
+      "FASE_2": "Enorabuena has adivinado la palabra. Vamos a por el siguiente juego. Ha sido facil no?",
+      "titulo": "Puertas Magicas",
+      "nivel anterior": "ordenar",
+      "descripcion": "Aquí deberas abrir cada puerta donde hay una clave escondia(tranquilo que se vera facil cual es la clave). El objetivo de esta FASE es ir abriendo las puertas hasta llegar a la clave para pasar a la siguiente FASE."
+    }
+  ],
+  "Puertas Magicas": [
+    {
+      "id": "1",
+      "instrucciones": "Adivina la puerta correcta. Ves haciendo GET's hasta llegar a la parte de la puerta donde contenga la palabra",
+      "puertas que hay": "AZUL, VERDE, AMARILLA"
+    }
+  ],
+  "AZUL": [
+    {
+      "id": "1",
+      "contenido": "Enserio has puesto la primera, bueno como veas aquí tienes dos más",
+      "Puertas": "MORADA, LILA"
+    }
+  ],
+  "MORADA": [
+    {
+      "id": "1",
+      "contenido": "Hay un bocata de jamón encima de la mesa",
+      "Puertas": "AZUL, NARANJA, ROSA"
+    }
+  ],
+  "NARANJA": [
+    {
+      "id": "1",
+      "contenido": "Hey quieres pelear, me llamo GOKU...",
+      "Puertas": "AZUL, MORADA, VERDE"
+    }
+  ],
+  "ROSA": [
+    {
+      "id": "1",
+      "contenido": "No puede ser un GATO CÓSMICO!!!!",
+      "GATO COSMICO": "- Que haces aquí Nobita, no deberias estar espiando a Shisuka sal de aquí ya! La puerta magica",
+      "GATO COSMICO1": "- Sal de aquí Nobita",
+      "titulo": "nobita",
+      "ruta": "URL/nobita",
+      "Puertas": "MORADA, AZUL"
+    }
+  ],
+  "VERDE": [
+    {
+      "id": "1",
+      "contenido": "Sabe una cosa, quién es el mensejero de mensejero de dios",
+      "Puertas": "Puertas Magicas, ARRIBA, ABAJO"
+    }
+  ],
+  "ARRIBA": [
+    {
+      "id": "1",
+      "contenido": "He llegado demasido arriba, creo que desde aqui puedo ver españa, sera mejor bajar",
+      "Puertas": "VERDE, LILA, NARANJA"
+    }
+  ],
+  "ABAJO": [
+    {
+      "id": "1",
+      "contenido": "Te esta gustando el juego?",
+      "Puertas": "LILA, MORADA"
+    }
+
+  ],
+  "LILA": [
+    {
+      "id": "1",
+      "contenido": "Oh no!!! Está el Moises haciendo un examen, rápido entra a una puerta para escapar",
+      "Puertas": "AZUL, IZQUIERDA, DERECHA"
+    }
+  ],
+  "IZQUIERDA": [
+    {
+      "id": "1",
+      "contenido": "El Carles está poniendo notas, no molestar!!!",
+      "Puertas": "LILA, AMARILLA"
+    }
+  ],
+  "DERECHA": [
+    {
+      "id": "1",
+      "contenido": "No hay nada aquí está vacio. Solo pone en la pared tonto quién lo lea...",
+      "Puertas": "LILA"
+    }
+  ],
+  "AMARILLA": [
+    {
+      "id": "1",
+      "contenido": "No me lo puedo estar creyendo, tiene que ser una broma es el mismísimo Faro",
+      "FARO": "- Porqué no me haces un DIR? :D",
+      "Puertas": "Puertas Magicas, SECRETA"
+    }
+  ],
+  "SECRETA": [
+    {
+      "id": "1",
+      "contenido": "Pone algo en la pared, parece una instrucción de Linux. Seguro que es por aquí",
+      "pared": "Cuál es la instrucción para cambiar la contraseña a un usuario? sudo xxxxx 'usuario'",
+      "Puerta regreso": "AMARILLA"
+    }
+  ],
+  "PASSWD": [
+    {
+      "id": "1",
+      "contenido": "Vaya pringado, te he hecho perder el tiempo. Vuelve pa atras venga",
+      "Puertas": "SECRETA"
+    }
+  ],
+  "nobita": [
+    {
+      "id": "1",
+      "FASE_3": "Muy bien Nobita, has conseguido salir de las puertas mágicas",
+      "nivel anterior": "ORDENAME, Puertas Magicas",
+      "titulo": "Cuanto Sabes",
+      "descripcion": "Aquí tendras que resolver una serie de ejercicios y la solución sera la siguiente clave para poder ir avanzando hasta superar la FASE.",
+      "ruta": "URL/Cuanto Sabes"
+    }
+  ],
+  "Cuanto Sabes": [
+    {
+      "id": "1",
+      "pregunta": "A cuánto equivale la x si 2*(2 * x) = 2?"
+    }
+  ],
+  "0.5": [
+    {
+      "id": "1",
+      "pregunta": "Quién escribió el Don Quijote?"
+    }
+  ],
+  "Miguel de Cervantes": [
+    {
+      "id": "1",
+      "pregunta": "Los peces pueden tener pulmones? (Verdad/Falso)"
+    }
+  ],
+  "Verdad": [
+    {
+      "id": "1",
+      "pregunta": "Cuál es la unidad estructural del sistema nervioso?"
+    }
+  ],
+  "Neurona": [
+    {
+      "id": "1",
+      "FASE_4": "Increíble has logrado pasar la prueba, eres duro de roer.",
+      "titulo": "Canta",
+      "nivel anterior": "ORDENAME, Puertas Magicas, Cuanto Sabes",
+      "descripcion": "A continuación deberas reemplazar las cadenas de XX del siguiente texto con el método PATCH. El titulo de la canción sera la clave para pasar a la siguiente FASE",
+      "ruta": "URL/Canta"
+    }
+  ],
+  "Canta": [
+    {
+      "id": "1",
+      "instruciones": "Deberas hacer un PATCH en la canción pero sustituyendo las x rellenadas por el número de letras correspondiente en el campo 'cancion' en la id actual",
+      "descripcion": "Deberas rellenar las cadenas de 'xxxx' y decir de que canción se trata y el título de la canción sera la clave para pasar al siguiente nivel",
+      "cancion": "Dale a tu xxxxxx alegria xxxxxxxx que tu xxxxxx es para darle alegria y cosa xxxxx"
+    }
+  ],
+  "Macarena": [
+    {
+      "id": "1",
+      "FASE_5": "Que bien, pero para no saberse esa canción. Pasemos a la siguiente",
+      "nivel anterior": "ORDENAME, Puertas Magicas, Cuanto Sabes, Canta",
+      "titulo": "Impostores",
+      "descripcion": "En esta parte deberas borrar las palabras que no tengan que ver con el contenido, tendras que eliminar las palabras que no pertenezcan a ese grupo y la última que quede sera la clave para pasar a la siguinete FASE",
+      "ruta": "URL/Impostores"
+    }
+  ],
+  "Impostores": [
+    {
+      "id": "1",
+      "descripcion": "Eimina con DELETE las palabras incorrectas de ese grupo, a partir de la id que le corresponde, ejemplo: URL/Frutas/1",
+      "descripcion1": "Elimina los objetos que no sean una fruta",
+      "grupos": "Pon esta ruta: URL/Frutas?id_ne=null, per obtenir el llistat d'objectes per cada grup"
+    }
+  ],
+  "Frutas": [
+    {
+      "id": "1",
+      "Fruta": "Magdalena"
+    },
+    {
+      "id": "2",
+      "Fruta": "Berenjena"
+    },
+    {
+      "id": "3",
+      "Fruta": "Granada"
+    },
+    {
+      "id": "4",
+      "Fruta": "Lechuga"
+    }
+  ],
+  "Granada": [
+    {
+      "id": "1",
+      "descripcion": "Elimina los ejercicios que no se practiquen en el gym de pesas, usando DELETE a partir del id associado al ejercicio, ejemplo: URL/Gyms/1",
+      "siguiente": "Pon en tu ruta Gyms, en esta parte tendras que dejar cual es el ejercicio de gym",
+      "ruta": "URL/Gyms"
+    }
+  ],
+  "Gyms": [
+    {
+      "id": "1",
+      "Gym": "Front level"
+    },
+    {
+      "id": "2",
+      "Gym": "Boxing"
+    },
+    {
+      "id": "3",
+      "Gym": "Beisbol"
+    },
+    {
+      "id": "4",
+      "Gym": "Hip Trust"
+    }
+  ],
+  "Hip Trust": [
+    {
+      "id": "1",
+      "FASE_6": "Buen ojo, has visto las que eran incorrectas",
+      "nivel anterior": "ORDENAME, Puertas Magicas, Cuanto Sabes, Canta, Impostores",
+      "titulo": "Escapa",
+      "descripcion": "En esta prueba vamos a ser un fugitivo buscado por la ley. Tendras que eliminar los objetos con su id associado que creas que te pueden llegar a delatar para incubrir tu crimen, lee la historia y luego decides cuales eliminar. Para pasar al siguiente nivel obten la clave de unir los códigos que dan los objetos que no eliminas del escenario.",
+      "instrucciones": "Usa GET's y DELETE's para jugar.",
+      "ruta": "URL/Escapa"
+    }
+  ],
+  "Escapa": [
+    {
+      "id": "1",
+      "escenario": "Te estás preparando para atracar una banco. Esta noche no has dormido bien y estás torpe. Prepárate porque vas a tener que remendar tus errores.",
+      "consulta llista de objectes": "URL/Escapa?id_ne=1, només han de quedar 2 objectes, usa la ruta per saber quins queden"
+    },
+    {
+      "id": "2",
+      "objeto": "Ganzua",
+      "descripcion": "La ganzua la has usado para abrir la puerta trasera del banco, pero sin darte cuenta se te ha caido del bolsillo al salir corriendo dirección a la caja fuerte.",
+      "codigo": "20"
+    },
+    {
+      "id": "3",
+      "objeto": "Estetoscopio",
+      "descripcion": "El estetoscopio voló de dentro de tu mochila al quedarse enganchado en la rueda de la puerta de la caja fuerte.",
+      "codigo": "12"
+    },
+    {
+      "id": "4",
+      "objeto": "Movil",
+      "descripcion": "El móvil lo llevabas colgado del cuello con una cuerda, y su utilidad era que tu compinche, que vigilaba desde fuera del banco, te avisara cuando llegara la policia para que te diera tiempo a escapar.",
+      "codigo": "58"
+    },
+    {
+      "id": "5",
+      "objeto": "Boligrafo",
+      "descripcion": "Con el bolígrafo anotabas en tu mano los números de la caja fuerte que iban desbloqueando la cerradura hasta tener el código completo.",
+      "codigo": "64"
+    },
+    {
+      "id": "6",
+      "objeto": "Guantes",
+      "descripcion": "Los llevabas puestos CASI todo el tiempo",
+      "codigo": "64"
+    }
+  ],
+  "2058": [
+    { 
+      "id": "1",
+      "instrucciones": "Haz un PUT a la URL des del que obtuviste la solución de la clave actual, con el id correspondiente a 1, el campo solucion tiene que estar entre comillas dobles:",
+      "plantilla": "{ solucion: 2058 }",
+      "ruta": "URL/Escapa/1"
+    },
+    {
+      "id": "2",
+      "FASE_7": "Efectivamente, el móvil no te incriminaba porque lo usaste con guantes y era de prepago, la ganzua también estaba limpia de huellas. En cambio , los guantes tenian el ADN de tu sudor por dentro, el estetoscopio el de tus oidos y el bolígrafo el de tu saliva, la próxima vez no muerdas el boli por nervios. Afortunadamente has eliminado las pruebas y ahora estas en el penúltimo nivel.",
+      "nivel anterior": "ORDENAME, Puertas Magicas, Cuanto Sabes, Canta, Escapa",
+      "titulo": "Corrige",
+      "descripcion": "A continuación tendras que corregir un texto. La frase corregida sera la clave para la siguiente fase.",
+      "instrucciones": "Usa PATCH para corregir, en el campo frase de la id: 1, ejemplo: URL/Corrige/1"
+    }
+  ],
+  "Corrige": [
+    {
+      "id": "1",
+      "frase": "Lentejas, comida de viejas, si las quieres bien y si no, se las das al perro"
+    }
+  ],
+  "Lentejas, comida de viejas, si las quieres bien y si no, las dejas": [
+    {
+      "id": "1",
+      "FASE_8": "¡Enhorabuenaa! Has llegado al último nivel. Estas muy cerca de salvar al gatito. El te lo agradece.",
+      "nivel anterior": "ORDENAME, Puertas Magicas, Cuanto Sabes, Macarena, Impostores, Escapa",
+      "titulo": "Bomba",
+      "descripcion": "Ahora para finalizar con tu aventura, deberas poner una bomba para destruir todo el lugar y salir victorioso.",
+      "instrucciones": "En esta prueba final deberas usar el método POST para jugar.",
+      "ruta": "URL/Bomba"
+    }
+  ],
+  "Bomba": [
+    {
+      "id": "1",
+      "descripcion": "Tienes 2 salas, en una de ellas esta el gatito, y en la otra tendras que activar la bomba para poder salir del lugar.",
+      "instrucciones": "Tendras que hacer un DELETE para recoger al gato, desde su id associado 'URL/sala gato/1' para sacar el gato de ahí, haz un POST a la 'sala control' para poner la bomba 'URL/sala control', y después haz un GET rápidamente a la 'sala control' antes de que explote la bomba para obtener los detalles de la salida.",
+      "bomba": "Bomba que colocar, para hacer el POST usa la siguiente plantilla en el Body y pon el campo bomba entre comillas dobles: { bomba: true }",
+      "titulos de salas": "sala gato, sala control"
+    }
+  ],
+  "sala gato": [
+    {
+      "id": "1",
+      "gato maullando": "- Miau"
+    }
+  ],
+  "sala control": [
+    {
+      "id": "1",
+      "salida al exterior": "Usa la ruta encontrada escapar del ScapeRoom: URL/exit"
+    }
+  ],
+  "exit": [
+    {
+      "id": "1",
+      "mensaje final": "Has logrado salir del ScapeRoom, tanto tu como el gatito estais a salvo. Enhorabuena!"
+    }
+  ]
+}
